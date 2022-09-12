@@ -1,6 +1,41 @@
 ﻿using ExemplosFundamentos.Common.Models;
 
-Pessoa pessoa1 = new Pessoa();
+List<string> listaString = new List<string>();
+
+listaString.Add("SP");
+listaString.Add("BA");
+listaString.Add("MG");
+
+for (int contador = 0; contador < listaString.Count; contador++)
+{
+     Console.WriteLine($" Posição N° {contador} - {listaString[contador]}");
+     
+ }
+
+
+// int [] arrayInteiros = new int[4];
+// arrayInteiros[0] = 72;
+// arrayInteiros[1] = 64;
+// arrayInteiros[2] = 50;
+// arrayInteiros[4] = 1;
+
+// Array.Resize(ref arrayInteiros, arrayInteiros.Length *2);
+
+// int [] arrayInteirosDobrados = new int [arrayInteiros.Length * 2];
+// Array.Copy(arrayInteiros, arrayInteirosDobrados, arrayInteiros.Length);
+
+
+// for (int contador = 0; contador < arrayInteiros.Length; contador++)
+// {
+//     Console.WriteLine($" Posição N° {contador} - {arrayInteiros[contador]}");
+// }
+
+// foreach(int valor in arrayInteiros)
+// {
+
+// }
+
+// Pessoa pessoa1 = new Pessoa();
 
 // string opcao;
 // bool exibirMenu = true;

@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "ExemplosFundamentos.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ExemplosFundamentos.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ExemplosFundamentos.Common.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "ExemplosFundamentos.Common/1.0.0": {
+      "type": "project",
+      "path": "../ExemplosFundamentos.Common/ExemplosFundamentos.Common.csproj",
+      "msbuildProject": "../ExemplosFundamentos.Common/ExemplosFundamentos.Common.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "ExemplosFundamentos.Common >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Maicon\\.nuget\\packages\\": {},
@@ -14,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Maicon\\Downloads\\DIO_\\Fundamentos.NET\\Projects.csproj",
-      "projectName": "Projects",
-      "projectPath": "C:\\Users\\Maicon\\Downloads\\DIO_\\Fundamentos.NET\\Projects.csproj",
+      "projectUniqueName": "C:\\Users\\Maicon\\Downloads\\DIO_\\Fundamentos.NET\\ExemplosFundamentos\\ExemploFundametos.csproj",
+      "projectName": "ExemploFundametos",
+      "projectPath": "C:\\Users\\Maicon\\Downloads\\DIO_\\Fundamentos.NET\\ExemplosFundamentos\\ExemploFundametos.csproj",
       "packagesPath": "C:\\Users\\Maicon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Maicon\\Downloads\\DIO_\\Fundamentos.NET\\obj\\",
+      "outputPath": "C:\\Users\\Maicon\\Downloads\\DIO_\\Fundamentos.NET\\ExemplosFundamentos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -38,7 +57,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Maicon\\Downloads\\DIO_\\Fundamentos.NET\\ExemplosFundamentos.Common\\ExemplosFundamentos.Common.csproj": {
+              "projectPath": "C:\\Users\\Maicon\\Downloads\\DIO_\\Fundamentos.NET\\ExemplosFundamentos.Common\\ExemplosFundamentos.Common.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
